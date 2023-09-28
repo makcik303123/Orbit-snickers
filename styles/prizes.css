@@ -1,0 +1,121 @@
+.prizes {
+  margin-top: 9%;
+}
+.prizes .prizes__content {
+  position: relative;
+}
+.prizes .prizes__content .content__prizes {
+  margin-left: -8%;
+}
+@media (max-width: 1024px) {
+  .prizes .prizes__content .content__prizes {
+    display: flex;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .prizes .prizes__content .content__prizes {
+    display: none;
+  }
+}
+.prizes .prizes__content .content__title {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+@media (max-width: 768px) {
+  .prizes .prizes__content .content__title {
+    position: relative;
+    top: initial;
+    right: initial;
+    margin: 0 10% 30px auto;
+    width: 165px;
+  }
+}
+@media (max-width: 600px) {
+  .prizes .prizes__content .content__title {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .prizes .prizes__content .content__title {
+    margin-right: 0;
+    width: 37%;
+  }
+}
+.prizes .prizes__content .content__amount {
+  position: absolute;
+  bottom: 230px;
+  right: 0%;
+}
+@media (max-width: 1280px) {
+  .prizes .prizes__content .content__amount {
+    bottom: 270px;
+  }
+  .prizes .prizes__content .content__amount img {
+    width: 340px;
+  }
+}
+@media (max-width: 1024px) {
+  .prizes .prizes__content .content__amount {
+    margin-top: -9%;
+    position: static;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .prizes .prizes__content .content__amount {
+    display: none;
+  }
+}
+.prizes .prizes__content .swiper {
+  display: none;
+  overflow: initial !important;
+  overflow-x: clip !important;
+}
+.prizes .prizes__content .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.prizes .prizes__content .swiper .swiper-slide .img-wrapper {
+  padding-right: 35px;
+}
+@media (max-width: 480px) {
+  .prizes .prizes__content .swiper .swiper-slide .img-wrapper {
+    padding-right: 10%;
+  }
+}
+.prizes .prizes__content .swiper .swiper-pagination {
+  margin-bottom: -50px;
+}
+.prizes .prizes__content .swiper .swiper-pagination span {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(121, 183, 207, 0.5);
+}
+.prizes .prizes__content .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #eb3125;
+}
+@media (max-width: 480px) {
+  .prizes .prizes__content .swiper .swiper-pagination {
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 768px) {
+  .prizes .prizes__content .swiper {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .prizes {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .prizes {
+    margin-top: 75px;
+  }
+}/*# sourceMappingURL=prizes.css.map */

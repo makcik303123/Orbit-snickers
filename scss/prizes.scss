@@ -1,0 +1,95 @@
+.prizes {
+	margin-top: 9%;
+	.prizes__content {
+		position: relative;
+		.content__prizes {
+			margin-left: -8%;
+			@media (max-width: 1024px) {
+				display: flex;
+				margin: 0;
+			}
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+		.content__title {
+			position: absolute;
+			top: 0;
+			right: 10%;
+			@media (max-width: 768px) {
+				position: relative;
+				top: initial;
+				right: initial;
+				margin: 0 10% 30px auto;
+				width: 165px;
+			}
+			@media (max-width: 600px) {
+				margin-right: 5%;
+			}
+			@media (max-width: 480px) {
+				margin-right: 0;
+				width: 37%;
+			}
+		}
+		.content__amount {
+			position: absolute;
+			bottom: 230px;
+			right: 0%;
+			@media (max-width: 1280px) {
+				bottom: 270px;
+				img {
+					width: 340px;
+				}
+			}
+			@media (max-width: 1024px) {
+				margin-top: -9%;
+				position: static;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+		.swiper {
+			display: none;
+			overflow: initial !important;
+			overflow-x: clip !important;
+			.swiper-slide {
+				display: flex;
+				justify-content: center;
+				.img-wrapper {
+					padding-right: 35px;
+					@media (max-width: 480px) {
+						padding-right: 10%;
+					}
+				}
+			}
+			.swiper-pagination {
+				margin-bottom: -50px;
+				span {
+					width: 12px;
+					height: 12px;
+					background-color: rgba(121, 183, 207, 0.5);
+				}
+				.swiper-pagination-bullet-active {
+					background-color: #eb3125;
+				}
+				@media (max-width: 480px) {
+					margin-bottom: -40px;
+				}
+			}
+			@media (max-width: 768px) {
+				display: block;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		margin-top: 100px;
+	}
+	@media (max-width: 480px) {
+		margin-top: 75px;
+	}
+}

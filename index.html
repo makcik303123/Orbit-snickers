@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>orbit+snickers</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+		/>
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/faq.css" />
+		<link rel="stylesheet" href="styles/prizes.css" />
+		<link rel="stylesheet" href="styles/winners.css" />
+		<link rel="stylesheet" href="styles/footer.cssm" />
+		<!-- <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js">
+			new Accordion('.accordion-container');
+		</script> -->
+	</head>
+	<body>
+		<div class="app">
+			<div class="wrapper">
+				<div class="header-wrapper">
+					<header class="header container">
+						<a target="_blank" href="https://evroopt.by/" class="wrapper__logo">
+							<img src="./assets/header_logotypes.png" alt="logo" />
+						</a>
+						<div class="header__left">
+							<div class="header__menu menu">
+								<nav id="menu__body" class="menu__body">
+									<ul class="header__nav">
+										<li class="nav__item">
+											<a class="nav__link" href="#conditions"
+												>условия участия</a
+											>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link" href="#prizes">призы</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link" href="#winners">победители</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link" href="#faq">вопрос-ответ</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link" href="#footer">правила</a>
+										</li>
+										<a class="header__button nav" href="#">мои коды</a>
+									</ul>
+								</nav>
+								<div id="wrapper__icon" class="wrapper__icon">
+									<div class="menu__icon">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="header__button-wrapper">
+								<a class="header__button" href="#">мои коды</a>
+							</div>
+						</div>
+					</header>
+				</div>
+				<main class="main">
+					<section class="top container">
+						<img class="top-desk" src="/assets/top.webp" alt="top" />
+						<img class="top-mob" src="/assets/top-mob.webp" alt="top" />
+					</section>
+					<div class="fake__wrapper">
+						<div class="wrapper__snikers-nuts absolute">
+							<img src="assets/conditions__orbit-snik.webp" alt="orb" />
+						</div>
+					</div>
+					<section id="conditions" class="conditions container">
+						<div class="conditions__title">
+							<div class="wrapper-img">
+								<img src="/assets/title-conditions.webp" alt="tc" />
+							</div>
+						</div>
+						<div class="steps">
+							<div class="step__wrapper">
+								<img src="assets/step-1.webp" draggable="false" alt="step-1" />
+							</div>
+							<div class="step__wrapper">
+								<img src="assets/step-2.webp" draggable="false" alt="step-2" />
+							</div>
+							<div class="step__wrapper">
+								<img src="assets/step-3.webp" draggable="false" alt="step-3" />
+							</div>
+						</div>
+					</section>
+					<section id="prizes" class="prizes container">
+						<div class="prizes__content">
+							<div class="content__prizes">
+								<img src="/assets/prizes.webp" alt="prizes" />
+							</div>
+							<div class="content__amount">
+								<img src="/assets/amount.webp" alt="amount" />
+							</div>
+							<div class="content__title">
+								<img src="/assets/title_prizes.webp" alt="title_prizes" />
+							</div>
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="img-wrapper">
+											<img src="assets/Group 8 (1).png" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="img-wrapper">
+											<img src="assets/Group 8 (1).png" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="img-wrapper">
+											<img src="assets/Group 8 (1).png" alt="" />
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="img-wrapper">
+											<img src="assets/Group 8 (1).png" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</section>
+					<section id="winners" class="winners container">
+						<div class="winners__title">
+							<img src="assets/titile_winners.webp" alt="title-winners" />
+						</div>
+						<div class="winners__table-wrapper">
+							<div class="winners__table">
+								<div class="table__head">
+									<span class="head__surname">Фамилия и инициалы</span>
+									<span class="head__prizes">Приз</span>
+									<div class="head__date">Дата розыгрыша</div>
+								</div>
+								<div class="table__head-mobile">
+									Фамилия и инициалы, приз, дата
+								</div>
+								<div class="table__content">
+									<div data-simplebar id="scroll" class="content__wrapper">
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+										<div class="content__row">
+											<div class="row__surname">Тесемников А.Б.</div>
+											<div class="row__prizes">
+												Умные часы Apple Watch Series 8 45 мм
+											</div>
+											<div class="row__date">10.10.2003</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wrapper__snik absolute">
+								<img src="assets/winners-snik.webp" alt="snik" />
+							</div>
+						</div>
+					</section>
+					<div class="fake__wrapper">
+						<div class="wrapper__orb absolute">
+							<img src="assets/faq-orb.webp" alt="orb" />
+						</div>
+					</div>
+					<section id="faq" class="faq container">
+						<div class="faq-title">
+							<img src="assets/title-faq.webp" alt="faq" />
+						</div>
+						<div class="accordion-container-wrapper">
+							<div class="accordion-container">
+								<div class="ac">
+									<h2 class="ac-header">
+										<button type="button" class="ac-trigger">
+											<span>кто может принять участие в акции?</span>
+											<div class="ac-plus">
+												<span></span>
+												<span></span>
+											</div>
+										</button>
+									</h2>
+									<div class="ac-panel">
+										<p class="ac-text">
+											Все граждане Республики Беларусь, постоянно проживающие в
+											Республике Беларусь, а также иностранные граждане и лица
+											без гражданства, имеющие вид на жительство на территории
+											Республики Беларусь и постоянно проживающие в Республике
+											Беларусь.
+										</p>
+									</div>
+								</div>
+
+								<div class="ac">
+									<h2 class="ac-header">
+										<button type="button" class="ac-trigger">
+											<span>СРОКИ ПРОВЕДЕНИЯ АКЦИИ?</span>
+											<div class="ac-plus">
+												<span></span>
+												<span></span>
+											</div>
+										</button>
+									</h2>
+									<div class="ac-panel">
+										<p class="ac-text">
+											Все граждане Республики Беларусь, постоянно проживающие в
+											Республике Беларусь, а также иностранные граждане и лица
+											без гражданства, имеющие вид на жительство на территории
+											Республики Беларусь и постоянно проживающие в Республике
+											Беларусь.
+										</p>
+									</div>
+								</div>
+
+								<div class="ac">
+									<h2 class="ac-header">
+										<button type="button" class="ac-trigger">
+											<span>КАКИЕ МОЖНО ПОЛУЧИТЬ ПРИЗЫ?</span>
+											<div class="ac-plus">
+												<span></span>
+												<span></span>
+											</div>
+										</button>
+									</h2>
+									<div class="ac-panel">
+										<p class="ac-text">
+											Все граждане Республики Беларусь, постоянно проживающие в
+											Республике Беларусь, а также иностранные граждане и лица
+											без гражданства, имеющие вид на жительство на территории
+											Республики Беларусь и постоянно проживающие в Республике
+											Беларусь.
+										</p>
+									</div>
+								</div>
+
+								<div class="ac">
+									<h2 class="ac-header">
+										<button type="button" class="ac-trigger">
+											<span>как узнать, что я выиграл?</span>
+											<div class="ac-plus">
+												<span></span>
+												<span></span>
+											</div>
+										</button>
+									</h2>
+									<div class="ac-panel">
+										<p class="ac-text">
+											Все граждане Республики Беларусь, постоянно проживающие в
+											Республике Беларусь, а также иностранные граждане и лица
+											без гражданства, имеющие вид на жительство на территории
+											Республики Беларусь и постоянно проживающие в Республике
+											Беларусь.
+										</p>
+									</div>
+								</div>
+
+								<div class="ac">
+									<h2 class="ac-header">
+										<button type="button" class="ac-trigger">
+											<span>СРОКИ ПРОВЕДЕНИЯ АКЦИИ?</span>
+											<div class="ac-plus">
+												<span></span>
+												<span></span>
+											</div>
+										</button>
+									</h2>
+									<div class="ac-panel">
+										<p class="ac-text">
+											Все граждане Республики Беларусь, постоянно проживающие в
+											Республике Беларусь, а также иностранные граждане и лица
+											без гражданства, имеющие вид на жительство на территории
+											Республики Беларусь и постоянно проживающие в Республике
+											Беларусь.
+										</p>
+									</div>
+								</div>
+
+								<div class="ac">
+									<h2 class="ac-header">
+										<button type="button" class="ac-trigger">
+											<span>как получить свой приз?</span>
+											<div class="ac-plus">
+												<span></span>
+												<span></span>
+											</div>
+										</button>
+									</h2>
+									<div class="ac-panel">
+										<p class="ac-text">
+											Все граждане Республики Беларусь, постоянно проживающие в
+											Республике Беларусь, а также иностранные граждане и лица
+											без гражданства, имеющие вид на жительство на территории
+											Республики Беларусь и постоянно проживающие в Республике
+											Беларусь.
+										</p>
+									</div>
+								</div>
+
+								<div class="ac">
+									<h2 class="ac-header">
+										<button type="button" class="ac-trigger">
+											<span>Сколько раз я могу принять участие в игре?</span>
+											<div class="ac-plus">
+												<span></span>
+												<span></span>
+											</div>
+										</button>
+									</h2>
+									<div class="ac-panel">
+										<p class="ac-text">
+											Все граждане Республики Беларусь, постоянно проживающие в
+											Республике Беларусь, а также иностранные граждане и лица
+											без гражданства, имеющие вид на жительство на территории
+											Республики Беларусь и постоянно проживающие в Республике
+											Беларусь.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wrapper__snik-orb absolute">
+							<img src="/assets/faq-snik-orb.webp" alt="snik-orb" />
+						</div>
+						<div class="wrapper__snik absolute">
+							<img src="assets/faq-snik.webp" alt="snik" />
+						</div>
+					</section>
+				</main>
+				<footer id="footer" class="footer">
+					<div class="footer__container">
+						<div class="footer__contact">
+							<div class="contact__col">
+								<div class="col__content">
+									<span class="number__title title">Горячая линия 🔥</span>
+									<a href="tel:+375291961716" class="number__info info"
+										>+375 29 196-17-16</a
+									>
+								</div>
+								<div class="col__content">
+									<span class="time__title title">В будние дни</span>
+									<span class="time__info info">с 09:30 до 17:00</span>
+								</div>
+							</div>
+							<div class="contact__col second-col">
+								<div class="col__content">
+									<span class="email__title title">Эл. почта</span>
+									<a href="mailto:igra@evroopt.by" class="email__info info"
+										>igra@evroopt.by</a
+									>
+								</div>
+								<div class="col__links">
+									<a href="" class="links__link-wrapper vk">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="40"
+											height="40"
+											viewBox="0 0 40 40"
+										>
+											<path
+												d="M0 19.2C0 10.149 0 5.62355 2.81177 2.81177C5.62355 0 10.149 0 19.2 0H20.8C29.851 0 34.3764 0 37.1882 2.81177C40 5.62355 40 10.149 40 19.2V20.8C40 29.851 40 34.3764 37.1882 37.1882C34.3764 40 29.851 40 20.8 40H19.2C10.149 40 5.62355 40 2.81177 37.1882C0 34.3764 0 29.851 0 20.8V19.2Z"
+												fill="black"
+												fill-opacity="0.25"
+											/>
+											<path
+												d="M21.0048 27.0397C13.3174 27.0397 8.9327 21.7695 8.75 13H12.6007C12.7272 19.4366 15.566 22.163 17.8146 22.7252V13H21.4406V18.5512C23.6611 18.3123 25.9937 15.7826 26.7807 13H30.4066C29.8023 16.4291 27.2727 18.9588 25.4738 19.9988C27.2727 20.842 30.1538 23.0484 31.25 27.0397H27.2586C26.4013 24.3695 24.2654 22.3036 21.4406 22.0225V27.0397H21.0048Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</a>
+									<a href="" class="links__link-wrapper facebook">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="40"
+											height="40"
+											viewBox="0 0 40 40"
+										>
+											<path
+												d="M0 19.2C0 10.149 0 5.62355 2.81177 2.81177C5.62355 0 10.149 0 19.2 0H20.8C29.851 0 34.3764 0 37.1882 2.81177C40 5.62355 40 10.149 40 19.2V20.8C40 29.851 40 34.3764 37.1882 37.1882C34.3764 40 29.851 40 20.8 40H19.2C10.149 40 5.62355 40 2.81177 37.1882C0 34.3764 0 29.851 0 20.8V19.2Z"
+												fill="black"
+												fill-opacity="0.25"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M21.6757 15.0823C22.1417 14.651 22.863 14.698 22.9159 14.7004L25.9341 14.6992L26 10.3502L25.5446 10.2385C25.2528 10.1669 24.3597 10 22.3911 10C18.8858 10 16.53 12.4501 16.53 16.0952V17.074H13V21.7744H16.53V30H21.2368V21.7744H24.9575L25.6046 17.074H21.2368V16.3537C21.2368 15.7814 21.385 15.3525 21.6757 15.0823Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</a>
+									<a href="" class="links__link-wrapper instagram">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="40"
+											height="40"
+											viewBox="0 0 40 40"
+										>
+											<path
+												d="M0 19.2C0 10.149 0 5.62355 2.81177 2.81177C5.62355 0 10.149 0 19.2 0H20.8C29.851 0 34.3764 0 37.1882 2.81177C40 5.62355 40 10.149 40 19.2V20.8C40 29.851 40 34.3764 37.1882 37.1882C34.3764 40 29.851 40 20.8 40H19.2C10.149 40 5.62355 40 2.81177 37.1882C0 34.3764 0 29.851 0 20.8V19.2Z"
+												fill="black"
+												fill-opacity="0.25"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M29.4702 13.4461C29.7669 14.2319 29.9244 15.0633 29.9356 15.9031C29.9975 16.9593 29.9978 17.3047 30 19.9783L30 20.0155C30 22.7242 29.9856 23.0624 29.9378 24.1291C29.9211 24.9595 29.7646 25.7778 29.4725 26.5539C29.2149 27.2166 28.8218 27.8185 28.3183 28.3211C27.8149 28.8238 27.212 29.2162 26.5482 29.4733C25.7712 29.7645 24.9502 29.9216 24.1204 29.9379C23.0598 30 22.7121 30 20 30C17.2879 30 16.9491 29.9856 15.8796 29.9379C15.0482 29.9106 14.2275 29.7419 13.4529 29.439C12.7888 29.1824 12.1857 28.7903 11.682 28.2878C11.1782 27.7853 10.7851 27.1835 10.5275 26.5207C10.2355 25.7434 10.0789 24.9252 10.0622 24.0958C10 23.0358 10 22.6899 10 19.9823C10 17.2746 10.0144 16.9365 10.0622 15.8687C10.0779 15.0406 10.2353 14.2212 10.5275 13.4461C10.7846 12.7831 11.1775 12.181 11.6811 11.6783C12.1846 11.1756 12.7877 10.7833 13.4518 10.5267C14.2285 10.2356 15.049 10.0781 15.8785 10.061C16.9391 10 17.2868 10 19.9989 10C22.711 10 23.0498 10.0133 24.1182 10.061C24.948 10.078 25.7689 10.2355 26.546 10.5267C27.21 10.7835 27.813 11.1758 28.3165 11.6785C28.82 12.1812 29.213 12.7832 29.4702 13.4461ZM14.8578 19.9767C14.8578 22.8085 17.1557 25.1026 19.9922 25.1026C21.354 25.1026 22.6599 24.5625 23.6228 23.6012C24.5857 22.64 25.1266 21.3362 25.1266 19.9767C25.1266 18.6173 24.5857 17.3135 23.6228 16.3522C22.6599 15.3909 21.354 14.8509 19.9922 14.8509C17.1557 14.8509 14.8578 17.1449 14.8578 19.9767ZM24.8726 15.7658C25.0179 15.8259 25.1737 15.8567 25.331 15.8565C25.9918 15.8565 26.5271 15.3221 26.5271 14.6613C26.5271 14.5044 26.4961 14.349 26.436 14.2041C26.3759 14.0591 26.2877 13.9274 26.1766 13.8165C26.0655 13.7056 25.9336 13.6176 25.7884 13.5575C25.6432 13.4975 25.4876 13.4666 25.3304 13.4666C25.1733 13.4666 25.0176 13.4975 24.8725 13.5575C24.7273 13.6176 24.5953 13.7056 24.4842 13.8165C24.3731 13.9274 24.285 14.0591 24.2248 14.2041C24.1647 14.349 24.1337 14.5044 24.1337 14.6613C24.1336 14.8183 24.1644 14.9738 24.2246 15.1188C24.2847 15.2639 24.3729 15.3958 24.4841 15.5068C24.5953 15.6178 24.7273 15.7058 24.8726 15.7658ZM23.3276 19.9781C23.3276 21.817 21.8344 23.3077 19.9924 23.3077C18.1504 23.3077 16.6572 21.817 16.6572 19.9781C16.6572 18.1392 18.1504 16.6484 19.9924 16.6484C21.8344 16.6484 23.3276 18.1392 23.3276 19.9781Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</a>
+									<a href="" class="links__link-wrapper odnoklassniki">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="40"
+											height="40"
+											viewBox="0 0 40 40"
+										>
+											<path
+												d="M0 19.2C0 10.149 0 5.62355 2.81177 2.81177C5.62355 0 10.149 0 19.2 0H20.8C29.851 0 34.3764 0 37.1882 2.81177C40 5.62355 40 10.149 40 19.2V20.8C40 29.851 40 34.3764 37.1882 37.1882C34.3764 40 29.851 40 20.8 40H19.2C10.149 40 5.62355 40 2.81177 37.1882C0 34.3764 0 29.851 0 20.8V19.2Z"
+												fill="black"
+												fill-opacity="0.25"
+											/>
+											<path
+												d="M17.1579 14.449C17.1579 12.896 18.4368 11.6381 20.0015 11.6381C21.5663 11.6381 22.8452 12.896 22.8452 14.449C22.8452 15.9949 21.5663 17.2457 20.0015 17.2457C18.4368 17.2457 17.1579 15.9879 17.1579 14.449ZM14.2071 14.449C14.2071 17.583 16.8078 20.1339 20.0015 20.1339C23.1953 20.1339 25.796 17.5901 25.796 14.449C25.796 11.3008 23.1953 8.75 20.0015 8.75C16.8078 8.75 14.2071 11.2938 14.2071 14.449ZM26.6748 20.8225C26.3461 20.183 25.4387 19.642 24.2384 20.5695C24.2384 20.5695 22.6165 21.8344 20.0015 21.8344C17.3866 21.8344 15.7647 20.5695 15.7647 20.5695C14.5644 19.642 13.657 20.183 13.3283 20.8225C12.7639 21.9539 13.4069 22.4879 14.8573 23.4225C16.0933 24.2025 17.801 24.4906 18.9012 24.6031L17.9796 25.5096C16.6792 26.7744 15.4432 28.0042 14.5715 28.8615C13.314 30.0983 15.336 32.0799 16.6006 30.8712L20.0087 27.5053C21.309 28.7842 22.5594 30.0139 23.4167 30.8712C24.6742 32.0799 26.7033 30.1193 25.4602 28.8615L22.0521 25.5096L21.1233 24.6031C22.2307 24.4906 23.9169 24.1885 25.1386 23.4225C26.5962 22.4879 27.2321 21.9468 26.6748 20.8225Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</a>
+									<a href="" class="links__link-wrapper tiktok">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="40"
+											height="40"
+											viewBox="0 0 40 40"
+										>
+											<path
+												d="M0 19.2C0 10.149 0 5.62355 2.81177 2.81177C5.62355 0 10.149 0 19.2 0H20.8C29.851 0 34.3764 0 37.1882 2.81177C40 5.62355 40 10.149 40 19.2V20.8C40 29.851 40 34.3764 37.1882 37.1882C34.3764 40 29.851 40 20.8 40H19.2C10.149 40 5.62355 40 2.81177 37.1882C0 34.3764 0 29.851 0 20.8V19.2Z"
+												fill="black"
+												fill-opacity="0.25"
+											/>
+											<path
+												d="M20.4538 10.0167C21.5846 10 22.7071 10.0087 23.8289 10C23.8662 11.3546 24.4354 12.5739 25.341 13.477L25.3396 13.4756C26.3143 14.3234 27.5825 14.8729 28.9807 14.9663L29 14.9677V18.3266C27.6792 18.2945 26.4372 18.0004 25.3175 17.4948L25.3741 17.5175C24.8326 17.2661 24.3746 17.0079 23.9394 16.7198L23.9753 16.7425C23.967 19.1763 23.9836 21.6101 23.9581 24.0352C23.8869 25.2711 23.4614 26.3983 22.7789 27.3394L22.7927 27.3187C21.6516 28.8968 19.8031 29.9326 17.701 29.994H17.6914C17.6064 29.998 17.5062 30 17.4054 30C16.2104 30 15.0934 29.6785 14.1415 29.1203L14.1691 29.1356C12.4367 28.1291 11.2416 26.407 11.0206 24.4041L11.0178 24.3767C11.0005 23.9598 10.9923 23.543 11.0095 23.1348C11.348 19.9473 14.1139 17.4815 17.4758 17.4815C17.8537 17.4815 18.224 17.5128 18.5838 17.5722L18.5452 17.5669C18.5624 18.8001 18.5106 20.034 18.5106 21.2673C18.2184 21.1652 17.8813 21.1059 17.5297 21.1059C16.2394 21.1059 15.1417 21.9022 14.7356 23.0141L14.7293 23.0341C14.6375 23.3189 14.5843 23.6464 14.5843 23.9852C14.5843 24.1226 14.5933 24.2587 14.6098 24.3921L14.6085 24.376C14.8378 25.7407 16.0494 26.7705 17.5104 26.7705C17.5525 26.7705 17.594 26.7698 17.6354 26.7678H17.6292C18.6398 26.7385 19.5171 26.2136 20.0131 25.4379L20.02 25.4259C20.2044 25.1778 20.3308 24.8776 20.3729 24.5515L20.3736 24.5421C20.46 23.0501 20.4254 21.5667 20.4337 20.0747C20.442 16.7158 20.4254 13.3649 20.451 10.0147L20.4538 10.0167Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</a>
+									<a href="" class="links__link-wrapper youtube">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="40"
+											height="40"
+											viewBox="0 0 40 40"
+										>
+											<path
+												d="M0 19.2C0 10.149 0 5.62355 2.81177 2.81177C5.62355 0 10.149 0 19.2 0H20.8C29.851 0 34.3764 0 37.1882 2.81177C40 5.62355 40 10.149 40 19.2V20.8C40 29.851 40 34.3764 37.1882 37.1882C34.3764 40 29.851 40 20.8 40H19.2C10.149 40 5.62355 40 2.81177 37.1882C0 34.3764 0 29.851 0 20.8V19.2Z"
+												fill="black"
+												fill-opacity="0.25"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M17.5861 23.325V16.1098C19.9768 17.3151 21.8283 18.4794 24.0181 19.7347C22.212 20.8079 19.9768 22.012 17.5861 23.325ZM30.9092 12.5214C30.4968 11.9392 29.794 11.4861 29.0457 11.3361C26.8463 10.8886 13.1252 10.8873 10.927 11.3361C10.3269 11.4566 9.7926 11.7479 9.3336 12.2006C7.39957 14.1239 8.0056 24.4379 8.47178 26.1086C8.66781 26.8318 8.92123 27.3533 9.24038 27.6957C9.65157 28.1483 10.2146 28.4599 10.8612 28.5997C12.6721 29.001 22.0016 29.2254 29.0074 28.66C29.6529 28.5394 30.2243 28.2178 30.6749 27.7459C32.4631 25.8303 32.3412 14.937 30.9092 12.5214Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</a>
+									<a href="" class="links__link-wrapper telegram">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="40"
+											height="40"
+											viewBox="0 0 40 40"
+										>
+											<path
+												d="M0 19.2C0 10.149 0 5.62355 2.81177 2.81177C5.62355 0 10.149 0 19.2 0H20.8C29.851 0 34.3764 0 37.1882 2.81177C40 5.62355 40 10.149 40 19.2V20.8C40 29.851 40 34.3764 37.1882 37.1882C34.3764 40 29.851 40 20.8 40H19.2C10.149 40 5.62355 40 2.81177 37.1882C0 34.3764 0 29.851 0 20.8V19.2Z"
+												fill="black"
+												fill-opacity="0.25"
+											/>
+											<path
+												d="M31.1859 12.9565L27.7904 28.8682C27.5341 29.991 26.8662 30.2705 25.9171 29.7418L20.7432 25.9534L18.247 28.3395C17.9705 28.6143 17.7399 28.8435 17.2071 28.8435L17.5792 23.608L27.1676 14.9985C27.5847 14.6296 27.0768 14.4243 26.5198 14.7941L14.6659 22.2113L9.56269 20.6237C8.45284 20.2795 8.43275 19.5208 9.79414 18.9914L29.7546 11.3498C30.6788 11.0056 31.4872 11.5534 31.1859 12.9565Z"
+												fill="currentColor"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__footnote">
+							<p class="paragraph">
+								Внешний вид и комплектация призов могут отличаться от
+								изображения на рекламном носителе.
+							</p>
+							<div class="footnote__info">
+								<div class="info__rules paragraph">
+									Рекламная игра «Orbit и Snickersi в Евроопт» проводится в
+									период с 02 октября 2023 г по 22 ноября 2023 г., включая
+									период розыгрыша и выдачи призов. Свидетельство о
+									государственной регистрации №4307, выданное Министерством
+									антимонопольного регулирования и торговли Республики Беларусь
+									от 13.04.2023г. Организатор ООО «Яскрава». УНП 191548102.
+								</div>
+								<div class="info__politic">
+									<a href="" class="politic__link paragraph"
+										>Политика ООО «Яскрава» в отношении обработки персональных
+										данных</a
+									>
+									<a href="" class="politic__link paragraph"
+										>Политика ООО «ЕВРОТОРГ» в отношении обработки персональных
+										данных</a
+									>
+									<a href="" class="politic__link paragraph"
+										>Политика ООО «ЕВРОТОРГ» в отношении обработки cookie</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<img
+							class="footer__img"
+							src="assets/img_footer.webp"
+							alt="img_footer"
+						/>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script type="module" src="/menu.js"></script>
+		<script type="module" src="/swiper.js"></script>
+		<script type="module" src="/accordion.js"></script>
+		<script type="module" src="/scrollbar.js"></script>
+	</body>
+</html>

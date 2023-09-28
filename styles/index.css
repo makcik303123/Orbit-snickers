@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+}
+
+.app {
+  max-width: 100vw;
+  overflow: hidden;
+  background: url(/assets/bg.webp) center no-repeat;
+  background-size: cover;
+}
+.app .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.app .wrapper .main {
+  padding-top: 100px;
+  flex: 1 1 auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.top .top-desk {
+  display: block;
+}
+@media (max-width: 992px) {
+  .top .top-desk {
+    display: none;
+  }
+}
+.top .top-mob {
+  display: none;
+}
+@media (max-width: 992px) {
+  .top .top-mob {
+    display: block;
+  }
+}
+
+.conditions {
+  position: relative;
+  z-index: 3;
+}
+.conditions .conditions__title {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.conditions .conditions__title .wrapper-img {
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .conditions .conditions__title {
+    display: none;
+  }
+}
+.conditions .steps {
+  margin-top: 7%;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .conditions .steps {
+    margin-top: 70px;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
+.fake__wrapper {
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.fake__wrapper .wrapper__orb {
+  top: -70px;
+  right: 0;
+}
+@media (max-width: 1280px) {
+  .fake__wrapper .wrapper__orb {
+    width: 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .fake__wrapper .wrapper__orb {
+    width: 200px;
+  }
+}
+.fake__wrapper .wrapper__snikers-nuts {
+  top: 0;
+  right: 0;
+}
+@media (max-width: 1024px) {
+  .fake__wrapper .wrapper__snikers-nuts {
+    width: 360px;
+  }
+}/*# sourceMappingURL=index.css.map */

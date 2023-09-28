@@ -1,0 +1,145 @@
+.footer {
+	margin-top: 22%;
+	background: rgba(69, 26, 11, 0.94);
+	backdrop-filter: blur(12px);
+	position: relative;
+
+	font-family: Roboto Condensed, sans-serif;
+
+	.footer__container {
+		display: flex;
+		padding: 32px 40px;
+		flex-direction: column;
+		gap: 32px;
+
+		.footer__contact {
+			display: flex;
+			gap: 64px;
+
+			.contact__col {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 16px;
+
+				.col__content {
+					display: flex;
+					flex-direction: column;
+				}
+				.col__links {
+					display: flex;
+					gap: 8px;
+
+					@media (max-width: 768px) {
+						gap: 20px;
+					}
+
+					@media (max-width: 480px) {
+						justify-content: space-between;
+						gap: 5px;
+					}
+
+					.links__link-wrapper {
+						display: flex;
+						cursor: pointer;
+						color: #fff;
+						transform: scale(1);
+						transition: 0.3s;
+
+						&.vk:hover {
+							color: rgb(127, 187, 255);
+						}
+						&.facebook:hover {
+							color: #4267b2;
+						}
+						&.instagram:hover {
+							color: #fa1a77;
+						}
+						&.odnoklassniki:hover {
+							color: rgb(249, 116, 0);
+						}
+						&.tiktok:hover {
+							color: rgb(0, 242, 234);
+						}
+						&.youtube:hover {
+							color: #ff0000;
+						}
+						&.telegram:hover {
+							color: #0088cc;
+						}
+						&:hover {
+							transform: scale(1.15);
+						}
+					}
+				}
+				&.second-col {
+					justify-content: space-between;
+				}
+			}
+			@media (max-width: 768px) {
+				flex-direction: column;
+				gap: 24px;
+			}
+		}
+		.footer__footnote {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+
+			.footnote__info {
+				display: flex;
+				gap: 32px;
+
+				.info__rules {
+					max-width: 690px;
+				}
+				.info__politic {
+					display: flex;
+					flex-direction: column;
+				}
+				@media (max-width: 1700px) {
+					flex-direction: column;
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			padding: 32px 15px;
+		}
+	}
+	.title {
+		color: #eb3125;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+	.info {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+	.paragraph {
+		color: #fff;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18px;
+		opacity: 0.4;
+	}
+	.footer__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		@media (max-width: 1280px) {
+			right: -150px;
+		}
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+	@media (max-width: 1024px) {
+		margin-top: 200px;
+	}
+	@media (max-width: 480px) {
+		margin-top: 120px;
+	}
+}
