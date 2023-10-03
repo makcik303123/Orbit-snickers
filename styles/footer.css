@@ -4,6 +4,7 @@
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   position: relative;
+  z-index: 7;
   font-family: Roboto Condensed, sans-serif;
 }
 .footer .footer__container {
@@ -118,6 +119,14 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  cursor: default;
+}
+.footer .info.link {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.footer .info.link:hover {
+  color: #ff1100;
 }
 .footer .paragraph {
   color: #fff;

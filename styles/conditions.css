@@ -1,0 +1,70 @@
+.conditions {
+  position: relative;
+  z-index: 3;
+}
+.conditions .conditions__title {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.conditions .conditions__title .wrapper-img {
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .conditions .conditions__title {
+    display: none;
+  }
+}
+.conditions .steps {
+  margin-top: 7%;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .conditions .steps {
+    margin-top: 70px;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+.conditions .steps .step__wrapper {
+  flex: 1;
+  transition: 0.3s;
+  opacity: 0;
+}
+.conditions .steps .step__wrapper.flex {
+  flex: 1.1;
+}
+@media (max-width: 1024px) {
+  .conditions .steps .step__wrapper.flex {
+    flex: 1;
+  }
+}
+.conditions .steps .step__wrapper img {
+  width: 100%;
+}
+.conditions .steps .step__wrapper:nth-child(1) {
+  transition: transform 0.5s, opacity 0.5s, flex 0.3s;
+  transform: translateY(450px);
+}
+.conditions .steps .step__wrapper:nth-child(2) {
+  transition: transform 1s, opacity 1s, flex 0.3s;
+  transform: translateY(-450px);
+}
+.conditions .steps .step__wrapper:nth-child(3) {
+  transition: transform 1.5s, opacity 1.5s, flex 0.3s;
+  transform: translateY(450px);
+}
+.conditions.element-show .conditions__title {
+  transform: translateY(0);
+  opacity: 1;
+}
+.conditions.element-show .steps .step__wrapper {
+  opacity: 1;
+  transform: translateY(0);
+}/*# sourceMappingURL=conditions.css.map */

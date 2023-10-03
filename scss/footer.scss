@@ -3,6 +3,7 @@
 	background: rgba(69, 26, 11, 0.94);
 	backdrop-filter: blur(12px);
 	position: relative;
+	z-index: 7;
 
 	font-family: Roboto Condensed, sans-serif;
 
@@ -117,6 +118,16 @@
 		font-size: 18px;
 		font-weight: 700;
 		line-height: 24px;
+		cursor: default;
+
+		&.link {
+			cursor: pointer;
+			transition: 0.2s;
+
+			&:hover {
+				color: #ff1100;
+			}
+		}
 	}
 	.paragraph {
 		color: #fff;

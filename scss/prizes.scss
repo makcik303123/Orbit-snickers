@@ -1,9 +1,16 @@
 .prizes {
 	margin-top: 9%;
+
 	.prizes__content {
 		position: relative;
+
 		.content__prizes {
 			margin-left: -8%;
+
+			transform: translateX(200%);
+			opacity: 0;
+			transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+
 			@media (max-width: 1024px) {
 				display: flex;
 				margin: 0;
@@ -35,6 +42,11 @@
 			position: absolute;
 			bottom: 230px;
 			right: 0%;
+
+			transform: translateX(-200%);
+			opacity: 0;
+			transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+
 			@media (max-width: 1280px) {
 				bottom: 270px;
 				img {
@@ -83,6 +95,16 @@
 			}
 			@media (max-width: 768px) {
 				display: block;
+			}
+		}
+		&.element-show {
+			.content__prizes {
+				transform: translateX(0);
+				opacity: 1;
+			}
+			.content__amount {
+				transform: translateX(0);
+				opacity: 1;
 			}
 		}
 	}

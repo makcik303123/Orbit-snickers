@@ -3,6 +3,8 @@ const menu = document.querySelector(".menu__body");
 
 burger.addEventListener("click", handleToggle);
 
+console.log(document.body.offsetHeight);
+
 function handleToggle() {
 	menu.classList.toggle("active");
 	burger.classList.toggle("active");
@@ -16,6 +18,8 @@ for (let anchor of anchors) {
 		const userWidth = window.innerWidth;
 		e.preventDefault();
 
+		console.log(document.body.offsetHeight);
+
 		menu.classList.remove("active");
 		burger.classList.remove("active");
 		document.body.classList.remove("lock");
@@ -25,7 +29,6 @@ for (let anchor of anchors) {
 
 		if (userWidth >= 768) {
 			block = blockID === "prizes" ? "nearest" : "center";
-			// block = "end";
 		} else {
 			block = blockID === "prizes" ? "center" : "start";
 		}

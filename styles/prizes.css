@@ -6,6 +6,9 @@
 }
 .prizes .prizes__content .content__prizes {
   margin-left: -8%;
+  transform: translateX(200%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
 @media (max-width: 1024px) {
   .prizes .prizes__content .content__prizes {
@@ -47,6 +50,9 @@
   position: absolute;
   bottom: 230px;
   right: 0%;
+  transform: translateX(-200%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
 @media (max-width: 1280px) {
   .prizes .prizes__content .content__amount {
@@ -108,6 +114,14 @@
   .prizes .prizes__content .swiper {
     display: block;
   }
+}
+.prizes .prizes__content.element-show .content__prizes {
+  transform: translateX(0);
+  opacity: 1;
+}
+.prizes .prizes__content.element-show .content__amount {
+  transform: translateX(0);
+  opacity: 1;
 }
 @media (max-width: 768px) {
   .prizes {

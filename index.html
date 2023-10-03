@@ -25,17 +25,22 @@
 		<link rel="stylesheet" href="styles/index.css" />
 		<link rel="stylesheet" href="styles/reset.css" />
 		<link rel="stylesheet" href="styles/header.css" />
+		<link rel="stylesheet" href="styles/top.css" />
+		<link rel="stylesheet" href="styles/conditions.css" />
 		<link rel="stylesheet" href="styles/faq.css" />
 		<link rel="stylesheet" href="styles/prizes.css" />
 		<link rel="stylesheet" href="styles/winners.css" />
 		<link rel="stylesheet" href="styles/footer.css" />
-		<!-- <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js">
-			new Accordion('.accordion-container');
-		</script> -->
 	</head>
 	<body>
 		<div class="app">
 			<div class="wrapper">
+				<div class="splash__top element-animation">
+					<img src="./assets/splash-top.png" alt="splash-top" />
+				</div>
+				<div class="splash__mid">
+					<img src="./assets/splash-mid.png" alt="splash-top" />
+				</div>
 				<div class="header-wrapper">
 					<header class="header container">
 						<a target="_blank" href="https://evroopt.by/" class="wrapper__logo">
@@ -80,16 +85,23 @@
 					</header>
 				</div>
 				<main class="main">
-					<section class="top container">
-						<img class="top-desk" src="/assets/top.webp" alt="top" />
-						<img class="top-mob" src="/assets/top-mob.webp" alt="top" />
+					<section class="top container element-animation">
+						<div class="top__left">
+							<img src="/assets/top-left.png" alt="top-left" />
+						</div>
+						<div class="top__right">
+							<img src="/assets/top-right.png" alt="top-right" />
+						</div>
 					</section>
 					<div class="fake__wrapper">
 						<div class="wrapper__snikers-nuts absolute">
 							<img src="assets/conditions__orbit-snik.webp" alt="orb" />
 						</div>
 					</div>
-					<section id="conditions" class="conditions container">
+					<section
+						id="conditions"
+						class="conditions element-animation container"
+					>
 						<div class="conditions__title">
 							<div class="wrapper-img">
 								<img src="/assets/title-conditions.webp" alt="tc" />
@@ -97,18 +109,18 @@
 						</div>
 						<div class="steps">
 							<div class="step__wrapper">
-								<img src="assets/step-1.webp" draggable="false" alt="step-1" />
+								<img src="assets/step-1.webp" alt="step-1" />
+							</div>
+							<div class="step__wrapper flex">
+								<img src="assets/step-2.webp" alt="step-2" />
 							</div>
 							<div class="step__wrapper">
-								<img src="assets/step-2.webp" draggable="false" alt="step-2" />
-							</div>
-							<div class="step__wrapper">
-								<img src="assets/step-3.webp" draggable="false" alt="step-3" />
+								<img src="assets/step-3.webp" alt="step-3" />
 							</div>
 						</div>
 					</section>
 					<section id="prizes" class="prizes container">
-						<div class="prizes__content">
+						<div class="prizes__content element-animation">
 							<div class="content__prizes">
 								<img src="/assets/prizes.webp" alt="prizes" />
 							</div>
@@ -145,7 +157,7 @@
 							</div>
 						</div>
 					</section>
-					<section id="winners" class="winners container">
+					<section id="winners" class="winners element-animation container">
 						<div class="winners__title">
 							<img src="assets/titile_winners.webp" alt="title-winners" />
 						</div>
@@ -244,7 +256,10 @@
 							<img src="assets/faq-orb.webp" alt="orb" />
 						</div>
 					</div>
-					<section id="faq" class="faq container">
+					<div class="rain__wrapper">
+						<canvas class="rain"></canvas>
+					</div>
+					<section id="faq" class="faq element-animation container">
 						<div class="faq-title">
 							<img src="assets/title-faq.webp" alt="faq" />
 						</div>
@@ -406,13 +421,14 @@
 						</div>
 					</section>
 				</main>
-				<footer id="footer" class="footer">
+
+				<footer class="footer" id="footer">
 					<div class="footer__container">
 						<div class="footer__contact">
 							<div class="contact__col">
 								<div class="col__content">
 									<span class="number__title title">Горячая линия 🔥</span>
-									<a href="tel:+375291961716" class="number__info info"
+									<a href="tel:+375291961716" class="number__info info link"
 										>+375 29 196-17-16</a
 									>
 								</div>
@@ -424,7 +440,7 @@
 							<div class="contact__col second-col">
 								<div class="col__content">
 									<span class="email__title title">Эл. почта</span>
-									<a href="mailto:igra@evroopt.by" class="email__info info"
+									<a href="mailto:igra@evroopt.by" class="email__info info link"
 										>igra@evroopt.by</a
 									>
 								</div>
@@ -605,9 +621,11 @@
 				</footer>
 			</div>
 		</div>
-		<script type="module" src="/menu.js"></script>
-		<script type="module" src="/swiper.js"></script>
-		<script type="module" src="/accordion.js"></script>
-		<script type="module" src="/scrollbar.js"></script>
+		<script type="module" src="js/observer.js"></script>
+		<script type="module" src="js/menu.js"></script>
+		<script type="module" src="js/swiper.js"></script>
+		<script type="module" src="js/accordion.js"></script>
+		<script type="module" src="js/app.js"></script>
+		<script type="module" src="js/rain.js"></script>
 	</body>
 </html>
