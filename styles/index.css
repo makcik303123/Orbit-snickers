@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: url("/assets/bg.png") center no-repeat;
+  background: url("/assets/background.webp") center no-repeat;
   background-size: cover;
 }
 .app .wrapper .main {
