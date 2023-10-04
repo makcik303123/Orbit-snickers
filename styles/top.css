@@ -19,12 +19,13 @@
 }
 .top .top__right {
   position: relative;
-  width: 60%;
+  width: 80%;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transform: translateX(100%);
 }
 @media (max-width: 768px) {
   .top .top__right {
+    margin-left: -10%;
     width: 100%;
   }
 }
@@ -34,7 +35,7 @@
 }
 @media (min-width: 1024px) {
   .top.element-show .top__right:hover {
-    transform: translateX(50px) scale(1.05);
+    transform: translateX(25px) scale(1.05);
   }
 }
 .top.element-show .top__left {
@@ -43,7 +44,7 @@
 }
 @media (min-width: 1024px) {
   .top.element-show .top__left:hover {
-    transform: translateX(-50px) scale(1.05);
+    transform: translateX(-25px) scale(1.05);
   }
 }
 @media (max-width: 768px) {
