@@ -28,7 +28,7 @@ for (let anchor of anchors) {
 		let block;
 
 		if (userWidth >= 768) {
-			block = blockID === "prizes" ? "nearest" : "center";
+			block = blockID === "prizes" ? "start" : "center";
 		} else {
 			block = blockID === "prizes" ? "center" : "start";
 		}

@@ -1,5 +1,6 @@
 .prizes {
-  margin-top: 9%;
+  margin-top: 5%;
+  padding-top: 4%;
 }
 .prizes .prizes__content {
   position: relative;
@@ -23,7 +24,7 @@
 }
 .prizes .prizes__content .content__title {
   position: absolute;
-  top: 0;
+  top: 5.5%;
   right: 10%;
 }
 @media (max-width: 768px) {
