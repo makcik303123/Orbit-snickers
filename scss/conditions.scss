@@ -58,6 +58,10 @@
 				transition: transform 1.5s, opacity 1.5s, flex 0.3s;
 				transform: translateY(450px);
 			}
+			&:nth-child(4) {
+				transition: transform 1s, opacity 1s, flex 0.3s;
+				transform: translateX(450px);
+			}
 		}
 	}
 	&.element-show {
