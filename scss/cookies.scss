@@ -283,5 +283,9 @@
 		&:hover {
 			background-color: #0086bb;
 		}
+		&.disabled {
+			background-color: #0086bb3c;
+			cursor: progress;
+		}
 	}
 }

@@ -261,4 +261,8 @@
 }
 .cookie-info .btn-success:hover {
   background-color: #0086bb;
+}
+.cookie-info .btn-success.disabled {
+  background-color: rgba(0, 134, 187, 0.2352941176);
+  cursor: progress;
 }/*# sourceMappingURL=cookies.css.map */

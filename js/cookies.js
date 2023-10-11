@@ -1,7 +1,7 @@
 const btnCookies = document.querySelectorAll(".cookies-button");
 const popUp = document.querySelector(".approv");
 
-function setCookie(name, value, days) {
+export function setCookie(name, value, days) {
 	const date = new Date();
 	date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
 	const expires = "expires=" + date.toUTCString();
@@ -56,20 +56,6 @@ btnCookies.forEach((button, index) => {
 			setCookie("user_data", "Отказ", 365);
 		}
 	});
-});
-
-const buttons = document.querySelectorAll(".setting__button")[1].children;
-const btnAgree = buttons[0];
-const btnDisAgree = buttons[1];
-
-btnAgree.addEventListener("click", () => {
-	btnAgree.children[0].checked = true;
-	btnDisAgree.children[0].checked = false;
-});
-
-btnDisAgree.addEventListener("click", () => {
-	btnDisAgree.children[0].checked = true;
-	btnAgree.children[0].checked = false;
 });
 
 document.addEventListener("DOMContentLoaded", checkCookies);
