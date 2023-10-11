@@ -28,12 +28,9 @@ function checkCookies() {
 	const userDataCookie = getCookie("user_data");
 	console.log(userDataCookie);
 	if (!userDataCookie) {
-		console.log("up");
 		document.body.classList.add("lock");
 		popUp.classList.add("active");
 	} else {
-		console.log("down");
-
 		popUp.remove();
 		userDataCookie === "Отказ" ? "" : addMetrica();
 	}
@@ -59,6 +56,20 @@ btnCookies.forEach((button, index) => {
 			setCookie("user_data", "Отказ", 365);
 		}
 	});
+});
+
+const buttons = document.querySelectorAll(".setting__button")[1].children;
+const btnAgree = buttons[0];
+const btnDisAgree = buttons[1];
+
+btnAgree.addEventListener("click", () => {
+	btnAgree.children[0].checked = true;
+	btnDisAgree.children[0].checked = false;
+});
+
+btnDisAgree.addEventListener("click", () => {
+	btnDisAgree.children[0].checked = true;
+	btnAgree.children[0].checked = false;
 });
 
 document.addEventListener("DOMContentLoaded", checkCookies);
