@@ -1,0 +1,228 @@
+.approv {
+  align-items: center;
+  bottom: 0;
+  height: 100%;
+  justify-content: center;
+  left: 0px;
+  overflow: auto;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  z-index: 999900;
+  display: flex;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.approv.active {
+  right: 0;
+  opacity: 1;
+}
+
+.cookie {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cookie .cookies {
+  background-color: #fffef6;
+  border-radius: 20px;
+  box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1019607843);
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+@media (max-width: 480px) {
+  .cookie .cookies {
+    padding: 20px;
+  }
+}
+.cookie .cookies-title {
+  border-bottom: 1px solid #5b310f;
+  color: #5b310f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.cookie .cookies-container {
+  background-color: #fffef6;
+  height: 100%;
+  max-width: 440px;
+  min-width: 260px;
+  width: 100%;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .cookie .cookies-container {
+    max-width: 340px;
+  }
+}
+@media (max-width: 480px) {
+  .cookie .cookies-container {
+    max-width: 280px;
+  }
+}
+
+.cookie .cookies-left {
+  display: block;
+}
+.cookie .cookies-left .button {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cookie .cookies-left .button a {
+  color: #757272;
+  padding-bottom: 5px;
+}
+.cookie .cookies-left .button a:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.cookie .cookies-content {
+  display: flex;
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .cookie .cookies-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.cookie .cookies-text {
+  align-self: center;
+  color: #606060;
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.cookie .cookies-text b,
+.cookie .cookies-text p {
+  color: #5b310f;
+}
+@media (max-width: 480px) {
+  .cookie .cookies-text b,
+  .cookie .cookies-text p {
+    margin-bottom: 10px;
+  }
+}
+
+.cookie .cookies-text a {
+  color: #5b310f;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .cookie .cookies-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+  }
+}
+.cookie .cookies-img {
+  background-image: url("../assets/cookie.de110760.svg") !important;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 124px;
+  right: 0;
+  top: 0;
+  width: 124px;
+  margin: 0 auto;
+}
+
+.cookie .cookies-buttons,
+.cookie .cookies-img {
+  display: flex;
+}
+
+.cookie .cookies-buttons {
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.cookie .cookies-buttons .cookies_agreement {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content-cookie a {
+  color: #5b310f;
+  text-decoration: underline;
+}
+
+.cookie-info {
+  color: rgb(238, 238, 238);
+  position: relative;
+  z-index: 2;
+}
+.cookie-info__title {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(238, 238, 238, 0.515);
+  margin: 40px 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+}
+.cookie-info .list-browsers {
+  display: flex;
+  gap: 20px;
+}
+.cookie-info .list-browsers .browser {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cookie-info .list-browsers .browser.edge {
+  background-image: url("../assets/cookies/edge.svg");
+}
+.cookie-info .list-browsers .browser.chrome {
+  background-image: url("../assets/cookies/chrome.svg");
+}
+.cookie-info .list-browsers .browser.firefox {
+  background-image: url("../assets/cookies/firefox.svg");
+}
+.cookie-info .list-browsers .browser.explorer {
+  background-image: url("../assets/cookies/ie.svg");
+}
+.cookie-info .list-browsers .browser.opera {
+  background-image: url("../assets/cookies/opera.svg");
+}
+.cookie-info .list-browsers .browser.safari {
+  background-image: url("../assets/cookies/safari.svg");
+}
+.cookie-info .list-browsers .browser:hover {
+  transform: scale(1.2);
+}
+.cookie-info .list-browsers .browser a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 375px) {
+  .cookie-info .list-browsers {
+    gap: initial;
+    justify-content: space-between;
+  }
+}
+.cookie-info a {
+  color: rgb(238, 238, 238) !important;
+}/*# sourceMappingURL=cookies.css.map */

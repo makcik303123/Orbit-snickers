@@ -159,4 +159,7 @@
   .footer {
     margin-top: 120px;
   }
+}
+.footer.margin-top {
+  margin-top: 80px;
 }/*# sourceMappingURL=footer.css.map */

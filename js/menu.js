@@ -3,8 +3,6 @@ const menu = document.querySelector(".menu__body");
 
 burger.addEventListener("click", handleToggle);
 
-console.log(document.body.offsetHeight);
-
 function handleToggle() {
 	menu.classList.toggle("active");
 	burger.classList.toggle("active");
@@ -17,8 +15,6 @@ for (let anchor of anchors) {
 	anchor.addEventListener("click", function (e) {
 		const userWidth = window.innerWidth;
 		e.preventDefault();
-
-		console.log(document.body.offsetHeight);
 
 		menu.classList.remove("active");
 		burger.classList.remove("active");
