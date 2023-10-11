@@ -5,7 +5,7 @@
   justify-content: center;
   left: 0px;
   overflow: auto;
-  position: absolute;
+  position: fixed;
   right: 100%;
   top: 0;
   z-index: 999900;
