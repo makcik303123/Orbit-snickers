@@ -26,11 +26,14 @@ function getCookie(name) {
 
 function checkCookies() {
 	const userDataCookie = getCookie("user_data");
-
+	console.log(userDataCookie);
 	if (!userDataCookie) {
+		console.log("up");
 		document.body.classList.add("lock");
 		popUp.classList.add("active");
 	} else {
+		console.log("down");
+
 		popUp.remove();
 		userDataCookie === "Отказ" ? "" : addMetrica();
 	}
