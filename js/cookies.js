@@ -26,7 +26,7 @@ function getCookie(name) {
 
 function checkCookies() {
 	const userDataCookie = getCookie("user_data");
-	console.log(userDataCookie);
+
 	if (!userDataCookie) {
 		document.body.classList.add("lock");
 		popUp.classList.add("active");
@@ -43,19 +43,21 @@ function addMetrica() {
 	document.head.appendChild(script);
 }
 
-btnCookies.forEach((button, index) => {
-	button.addEventListener("click", () => {
-		document.body.classList.remove("lock");
-		popUp.classList.remove("active");
+function confirmAnswer(index) {
+	document.body.classList.remove("lock");
+	popUp.classList.remove("active");
 
-		if (index === 1) {
-			setCookie("user_data", "Принял", 365);
-			addMetrica();
-		}
-		if (index === 0) {
-			setCookie("user_data", "Отказ", 365);
-		}
-	});
-});
+	if (index === 1) {
+		setCookie("user_data", "Принял", 365);
+		addMetrica();
+	}
+	if (index === 0) {
+		setCookie("user_data", "Отказ", 365);
+	}
+}
+
+btnCookies.forEach((button, index) =>
+	button.addEventListener("click", () => confirmAnswer(index))
+);
 
 document.addEventListener("DOMContentLoaded", checkCookies);
