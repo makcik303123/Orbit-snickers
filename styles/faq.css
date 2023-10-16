@@ -37,7 +37,7 @@
 }
 .faq .accordion-container-wrapper .accordion-container {
   border-radius: 16px;
-  background: #fff;
+  background: var(--white);
   padding: 15px;
   position: relative;
   z-index: 2;
@@ -60,13 +60,13 @@
   box-shadow: none !important;
 }
 .faq .accordion-container-wrapper .accordion-container .ac.is-active .ac-header .ac-trigger {
-  color: #fff;
+  color: var(--white);
 }
 .faq .accordion-container-wrapper .accordion-container .ac.is-active .ac-header .ac-trigger .ac-plus {
   transform: rotate(225deg);
 }
 .faq .accordion-container-wrapper .accordion-container .ac.is-active .ac-header .ac-trigger .ac-plus span {
-  background-color: #fff;
+  background-color: var(--white);
 }
 .faq .accordion-container-wrapper .accordion-container .ac .ac-header {
   width: 100%;
@@ -107,7 +107,7 @@
 .faq .accordion-container-wrapper .accordion-container .ac .ac-panel .ac-text {
   padding: 0;
   font-family: Roboto, sans-serif;
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   font-style: normal;
   font-weight: lighter;

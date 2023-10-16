@@ -6,7 +6,7 @@ body {
 
 .header-wrapper {
 	width: 100%;
-	background: #fff;
+	background: var(--white);
 	position: fixed;
 	z-index: 10000;
 }
@@ -176,8 +176,8 @@ body {
 				align-items: center;
 				gap: 10px;
 				border-radius: 12px;
-				background: #14a4de;
-				color: #fff;
+				background: var(--bg-blue);
+				color: var(--white);
 				white-space: nowrap;
 				text-transform: uppercase;
 				transform: scale(1);

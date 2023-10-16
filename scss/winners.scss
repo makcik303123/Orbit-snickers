@@ -55,7 +55,7 @@
 				gap: 20px;
 				align-items: center;
 
-				color: #fff;
+				color: var(--white);
 
 				.head__surname {
 					padding: 24px;
@@ -100,7 +100,7 @@
 			.table__head-mobile {
 				display: none;
 
-				color: #fff;
+				color: var(--white);
 				font-family: Impact, sans-serif;
 				font-size: 24px;
 				line-height: 100%;
@@ -127,7 +127,7 @@
 					border-radius: 12px;
 					padding: 16px 0;
 					overflow: auto;
-					background-color: #fff;
+					background-color: var(--white);
 					height: 438px;
 					position: relative;
 
@@ -138,7 +138,7 @@
 						display: flex;
 						gap: 20px;
 						align-items: center;
-						background-color: #fff;
+						background-color: var(--white);
 
 						color: #1a1f2a;
 						font-family: Roboto, sans-serif;
@@ -243,13 +243,8 @@
 	opacity: 0;
 }
 
-// .simplebar-scrollbar {
-// 	// background-color: #b5eaff;
-// }
-// .simplebar-visible {
-// }
 .simplebar-scrollbar:before {
 	border-radius: 6px;
-	background: var(--Orbit-Blue, #14a4de);
+	background: var(--bg-blue);
 	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
 }

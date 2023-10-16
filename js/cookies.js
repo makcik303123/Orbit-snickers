@@ -10,29 +10,35 @@ export function setCookie(name, value, days) {
 
 function getCookie(name) {
 	const decodedCookies = decodeURIComponent(document.cookie);
-	const cookiesArray = decodedCookies.split(";");
-	for (let i = 0; i < cookiesArray.length; i++) {
-		let cookie = cookiesArray[i];
+	let value = false;
 
-		while (cookie.charAt(0) === " ") {
-			cookie = cookie.substring(1);
+	const cookiesArray = decodedCookies.split(";");
+	cookiesArray.forEach((cookie) => {
+		cookie = cookie.split("");
+
+		while (cookie[0] === " ") {
+			cookie.shift();
 		}
+
+		cookie = cookie.join("");
+
 		if (cookie.indexOf(name + "=") === 0) {
-			return cookie.substring(name.length + 1, cookie.length);
+			value = cookie.slice(name.length + 1, cookie.length);
 		}
-	}
-	return "";
+	});
+
+	return value;
 }
 
 function checkCookies() {
-	const userDataCookie = getCookie("user_data");
+	const userDataCookie = JSON.parse(getCookie("coockies-setting"));
 
 	if (!userDataCookie) {
 		document.body.classList.add("lock");
 		popUp.classList.add("active");
 	} else {
 		popUp.remove();
-		userDataCookie === "Отказ" ? "" : addMetrica();
+		userDataCookie ? addMetrica() : "";
 	}
 }
 
@@ -48,11 +54,11 @@ function confirmAnswer(index) {
 	popUp.classList.remove("active");
 
 	if (index === 1) {
-		setCookie("user_data", "Принял", 365);
+		setCookie("coockies-setting", true, 365);
 		addMetrica();
 	}
 	if (index === 0) {
-		setCookie("user_data", "Отказ", 365);
+		setCookie("coockies-setting", false, 365);
 	}
 }
 

@@ -45,7 +45,7 @@
 .footer .footer__container .footer__contact .contact__col .col__links .links__link-wrapper {
   display: flex;
   cursor: pointer;
-  color: #fff;
+  color: var(--white);
   transform: scale(1);
   transition: 0.3s;
 }
@@ -115,7 +115,7 @@
   line-height: 24px;
 }
 .footer .info {
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -129,7 +129,7 @@
   color: #ff1100;
 }
 .footer .paragraph {
-  color: #fff;
+  color: var(--white);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;

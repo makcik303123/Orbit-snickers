@@ -26,8 +26,12 @@ html {
 	max-width: 100vw;
 	height: 100%;
 	overflow: hidden;
-	background: rgb(69 26 11 / 94%);
+	background: var(--bg-blue);
 	background-size: cover;
+
+	&.app-cookies {
+		background: rgb(69 26 11 / 94%);
+	}
 
 	.wrapper {
 		overflow: hidden;

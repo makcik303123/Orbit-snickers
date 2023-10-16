@@ -45,8 +45,8 @@
   }
 }
 .cookie .cookies-title {
-  border-bottom: 1px solid #5b310f;
-  color: #5b310f;
+  border-bottom: 1px solidvar(--brown-cookies);
+  color: var(--brown-cookies);
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -111,7 +111,7 @@
 
 .cookie .cookies-text b,
 .cookie .cookies-text p {
-  color: #5b310f;
+  color: var(--brown-cookies);
 }
 @media (max-width: 480px) {
   .cookie .cookies-text b,
@@ -121,7 +121,7 @@
 }
 
 .cookie .cookies-text a {
-  color: #5b310f;
+  color: var(--brown-cookies);
   text-decoration: underline;
 }
 
@@ -161,7 +161,7 @@
 }
 
 .content-cookie a {
-  color: #5b310f;
+  color: var(--brown-cookies);
   text-decoration: underline;
 }
 
@@ -252,8 +252,8 @@
   align-items: center;
   gap: 10px;
   border-radius: 7px;
-  background: #14a4de;
-  color: #fff;
+  background: var(--bg-blue);
+  color: var(--white);
   white-space: nowrap;
   text-transform: uppercase;
   transform: scale(1);
