@@ -1,8 +1,6 @@
 const burger = document.getElementById("wrapper__icon");
 const menu = document.querySelector(".menu__body");
 
-const mobileWidth = 768;
-
 burger.addEventListener("click", handlerToggle);
 
 function handlerToggle() {
@@ -15,7 +13,7 @@ const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
 	anchor.addEventListener("click", function (e) {
-		const userWidth = window.innerWidth;
+		const isDesktop = window.innerWidth > 768;
 		e.preventDefault();
 
 		menu.classList.remove("active");
@@ -25,7 +23,7 @@ for (let anchor of anchors) {
 		const blockID = anchor.getAttribute("href").slice(1);
 		let block;
 
-		if (userWidth >= mobileWidth) {
+		if (isDesktop) {
 			block = blockID === "prizes" ? "start" : "center";
 		} else {
 			block = blockID === "prizes" ? "center" : "start";
