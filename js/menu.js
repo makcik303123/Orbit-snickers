@@ -9,7 +9,7 @@ function handlerToggle() {
 	document.body.classList.toggle("lock");
 }
 
-const anchors = document.querySelectorAll('a[href*="#"]');
+const anchors = document.querySelectorAll("anchors");
 
 for (let anchor of anchors) {
 	anchor.addEventListener("click", function (e) {
