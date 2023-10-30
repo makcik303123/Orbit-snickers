@@ -1,12 +1,9 @@
+import { setCookie } from "./setCookie.js";
+
 const btnCookies = document.querySelectorAll(".cookies-button");
 const popUp = document.querySelector(".approv");
 
-export function setCookie(name, value, days) {
-	const date = new Date();
-	date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-	const expires = "expires=" + date.toUTCString();
-	document.cookie = name + "=" + value + ";" + expires + ";path=/";
-}
+console.log(btnCookies);
 
 function getCookie(name) {
 	const decodedCookies = decodeURIComponent(document.cookie);

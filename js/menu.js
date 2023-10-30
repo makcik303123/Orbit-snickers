@@ -24,7 +24,7 @@ for (let anchor of anchors) {
 		let block;
 
 		if (isDesktop) {
-			block = blockID === "prizes" ? "start" : "center";
+			block = "center";
 		} else {
 			block = blockID === "prizes" ? "center" : "start";
 		}

@@ -1,4 +1,4 @@
-import { setCookie } from "./cookies.js";
+import { setCookie } from "./setCookie.js";
 
 const radioButton = document.querySelectorAll(".active-input");
 const btnSubmt = document.querySelector(".btn-success");
