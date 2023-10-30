@@ -11,7 +11,6 @@ function handlerToggle() {
 
 const anchors = document.querySelectorAll(".anchors");
 
-console.log(anchors);
 for (let anchor of anchors) {
 	anchor.addEventListener("click", function (e) {
 		const isDesktop = window.innerWidth > 768;

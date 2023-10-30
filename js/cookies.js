@@ -3,11 +3,9 @@ import { setCookie } from "./setCookie.js";
 const btnCookies = document.querySelectorAll(".cookies-button");
 const popUp = document.querySelector(".approv");
 
-console.log(btnCookies);
-
 function getCookie(name) {
 	const decodedCookies = decodeURIComponent(document.cookie);
-	let value = false;
+	let value = undefined;
 
 	const cookiesArray = decodedCookies.split(";");
 	cookiesArray.forEach((cookie) => {
@@ -28,14 +26,14 @@ function getCookie(name) {
 }
 
 function checkCookies() {
-	const userDataCookie = JSON.parse(getCookie("coockies-setting"));
+	const userDataCookie = getCookie("coockies-setting");
 
 	if (!userDataCookie) {
 		document.body.classList.add("lock");
 		popUp.classList.add("active");
 	} else {
 		popUp.remove();
-		userDataCookie ? addMetrica() : "";
+		userDataCookie === "true" ? addMetrica() : "";
 	}
 }
 
@@ -50,11 +48,11 @@ function confirmAnswer(index) {
 	document.body.classList.remove("lock");
 	popUp.classList.remove("active");
 
-	if (index === 1) {
+	if (index === 2) {
 		setCookie("coockies-setting", true, 365);
 		addMetrica();
 	}
-	if (index === 0) {
+	if (index === 1) {
 		setCookie("coockies-setting", false, 365);
 	}
 }
