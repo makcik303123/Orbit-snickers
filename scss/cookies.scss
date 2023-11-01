@@ -263,6 +263,21 @@
 			display: flex;
 			align-items: center;
 			font-size: 20px;
+
+			label {
+				cursor: default;
+			}
+
+			&.active-input {
+				cursor: pointer;
+
+				input {
+					cursor: pointer;
+				}
+				label {
+					cursor: pointer;
+				}
+			}
 		}
 	}
 	.btn-success {

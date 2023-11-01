@@ -244,6 +244,18 @@
   align-items: center;
   font-size: 20px;
 }
+.cookie-info .setting__button .input__wrapper label {
+  cursor: default;
+}
+.cookie-info .setting__button .input__wrapper.active-input {
+  cursor: pointer;
+}
+.cookie-info .setting__button .input__wrapper.active-input input {
+  cursor: pointer;
+}
+.cookie-info .setting__button .input__wrapper.active-input label {
+  cursor: pointer;
+}
 .cookie-info .btn-success {
   margin-top: 30px;
   display: flex;
