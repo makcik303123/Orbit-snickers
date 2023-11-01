@@ -43,7 +43,7 @@ html {
 		background-size: cover;
 
 		&.long {
-			background-repeat: repeat-y;
+			background: url("/assets/bg-without-orbit.webp") center repeat-y;
 			background-size: 100%;
 		}
 
