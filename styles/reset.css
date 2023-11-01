@@ -4,17 +4,24 @@
   border: none;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Links */
 a,
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+table,
+tr,
+th,
+td {
+  border: 0.5px solid #fff;
+}
+
+tr,
+th,
+td {
+  padding: 5px;
 }
 
 a:hover {

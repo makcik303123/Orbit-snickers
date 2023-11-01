@@ -42,6 +42,11 @@ html {
 		background: url("/assets/background.webp") center no-repeat;
 		background-size: cover;
 
+		&.long {
+			background-repeat: repeat-y;
+			background-size: 100%;
+		}
+
 		.main {
 			position: relative;
 			z-index: 3;

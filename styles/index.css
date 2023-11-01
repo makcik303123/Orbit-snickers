@@ -40,6 +40,10 @@ html {
   background: url("/assets/background.webp") center no-repeat;
   background-size: cover;
 }
+.app .wrapper.long {
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
 .app .wrapper .main {
   position: relative;
   z-index: 3;
