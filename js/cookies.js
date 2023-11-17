@@ -40,6 +40,7 @@ function checkCookies() {
 function addMetrica() {
 	const script = document.createElement("script");
 	script.type = "text/javascript";
+	script.async = true;
 	script.innerHTML = `
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();
@@ -57,9 +58,7 @@ function addMetrica() {
 	document.head.appendChild(script);
 
 	const noscript = document.createElement("noscript");
-	noscript.type = "text/javascript";
-	noscript.src = "https://mc.yandex.ru/watch/95445044";
-	noscript.async = true;
+	noscript.innerHTML = `<div><img src="https://mc.yandex.ru/watch/95445044" style="position:absolute; left:-9999px;" alt="" /></div>`;
 	document.head.appendChild(noscript);
 }
 

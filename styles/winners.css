@@ -149,24 +149,31 @@
 }
 .winners .winners__table-wrapper .winners__table .table__content .content__wrapper .content__row .row__surname {
   padding: 10px 24px;
-  width: 270px;
+  min-width: 270px;
 }
 @media (max-width: 1024px) {
   .winners .winners__table-wrapper .winners__table .table__content .content__wrapper .content__row .row__surname {
-    width: 200px;
+    min-width: 200px;
   }
 }
 .winners .winners__table-wrapper .winners__table .table__content .content__wrapper .content__row .row__prizes {
   padding: 10px 16px;
   flex: 1 1 auto;
 }
+.winners .winners__table-wrapper .winners__table .table__content .content__wrapper .content__row .row__gameCode {
+  position: absolute;
+  font-size: 14px;
+  bottom: 3px;
+  left: 24px;
+  color: #1a1f2a;
+}
 .winners .winners__table-wrapper .winners__table .table__content .content__wrapper .content__row .row__date {
-  width: 180px;
+  min-width: 180px;
   padding: 10px 16px;
 }
 @media (max-width: 1024px) {
   .winners .winners__table-wrapper .winners__table .table__content .content__wrapper .content__row .row__date {
-    width: 129px;
+    min-width: 129px;
   }
 }
 @media (max-width: 768px) {

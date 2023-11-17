@@ -145,10 +145,10 @@
 
 						.row__surname {
 							padding: 10px 24px;
-							width: 270px;
+							min-width: 270px;
 
 							@media (max-width: 1024px) {
-								width: 200px;
+								min-width: 200px;
 							}
 						}
 
@@ -156,13 +156,19 @@
 							padding: 10px 16px;
 							flex: 1 1 auto;
 						}
-
+						.row__gameCode {
+							position: absolute;
+							font-size: 14px;
+							bottom: 3px;
+							left: 24px;
+							color: #1a1f2a;
+						}
 						.row__date {
-							width: 180px;
+							min-width: 180px;
 							padding: 10px 16px;
 
 							@media (max-width: 1024px) {
-								width: 129px;
+								min-width: 129px;
 							}
 						}
 						.row__date,
